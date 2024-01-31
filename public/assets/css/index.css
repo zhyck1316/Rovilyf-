@@ -75,95 +75,42 @@ img:hover{
     --phoenix-btn-padding-y: 0;
 }
 
-#reviewimg {
-    max-width: 50%;
-  }
-  
-  .reviewmain {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fafafa;
-  }
-  
-  .reviewcontainer {
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .reviewtitle {
-    margin: 40px 0px;
-  }
-  
-  .reviewtitle h2 {
-    font-size: 50px;
-    text-transform: capitalize;
-    margin-bottom: 5px;
-  }
-  
-  .reviewtitle .underline {
-    width: 100px;
-    height: 4px;
-    background-color: #177a29;
-    margin: 0 auto;
-  }
-  
-  .reviewsection {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    background-color: #fff;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  #reviewperson-img {
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.5);
-  }
-  
-  #reviewauthor {
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: capitalize;
-    margin-top: 10px;
-  }
-  
-  #reviewjob {
-    text-transform: uppercase;
-    line-height: 150%;
-    margin-bottom: 10px;
-    color: #177a29;
-  }
-  
-  #reviewinfo {
+  #homefindoutmore{border: 1px solid #8e002d; color:#8e002d}
+
+  #homefindoutmore:hover{color: white; background: linear-gradient(180deg, #cd006a 0%, #8e002d 100%); border: none;}
+
+.description_box{
     height: 100px;
-    font-size: 18px;
-    color: #454545;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .reviewbtn {
-    text-decoration: none;
-    border-style: none;
-    background-color: #fff;
-    font-size: 30px;
-    margin: 0 10px;
-    color: #177a29;
+    overflow: hidden;
+    line-height: 1.5;
+    position: relative;
+}
+.hstack .active{
+    height: auto;
+}
+.hstack  button{
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--phoenix-400);
+    background-color: transparent;
+    z-index: 1;
     cursor: pointer;
-  }
+}
+.hstack button:after{
+    position: absolute;
+    content: "";
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    background: linear-gradient(180deg , #ffffffa1 , #fff , #fff);
+    z-index: -1;
+}
+.card_container::-webkit-scrollbar {
+  display: none;
+}

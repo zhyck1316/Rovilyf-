@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./public/assets/img/icons/Rove_nobg2.png">
     <link rel="shortcut icon" type="image/x-icon" href="./public/assets/img/icons/Rove_nobg2.png">
     <link rel="manifest" href="./public/assets/img/favicons/manifest.json">
-    <meta name="msapplication-TileImage" content="./assets/img/favicons/mstile-150x150.png">
+    <meta name="msapplication-TileImage" content="/assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
     <script src="./public/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="./public/vendors/simplebar/simplebar.min.js"></script>
@@ -25,8 +25,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,900;0,600;0,700;0,900;0,900;1,100;1,200;1,300;1,400;1,900;1,600;1,700;1,900;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link href="./public/vendors/simplebar/simplebar.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link href="./public/assets/css/theme-rtl.min.css" type="text/css" rel="stylesheet" id="style-rtl">
@@ -54,117 +55,135 @@
   </head>
   <style>
     .bannertext {
-            background-clip: text;
-            color: transparent;
-            background-image: linear-gradient(180deg, #cd006a 0%, #8e002d 100%);
-        }
+      background-clip: text;
+      color: #ce0042;
+      font-family: 'Varela Round', sans-serif;
+      letter-spacing: 2px;
+    }
     .servicesweoffer{
       background-clip: text;
       color: transparent;
       background-image: linear-gradient(180deg, #820043 0%, #700024 100%);
     }
      #home{
-      background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1440" height="560" preserveAspectRatio="none" viewBox="0 0 1440 560"%3e%3cg mask="url(%26quot%3b%23SvgjsMask1000%26quot%3b)" fill="none"%3e%3cpath d="M-21.68 419.24C80.86 419.5 180.39 489.24 382.46 489.24 584.53 489.24 579.46 418.11 786.61 419.24 993.75 420.37 1072.06 661.5 1190.75 671.58" stroke="rgba(51%2c 132%2c 194%2c 0.73)" stroke-width="2"%3e%3c/path%3e%3cpath d="M-245.21 415.31C-77.46 409.9 135.66 151.04 372.4 152.11 609.13 153.18 555.58 553.46 681.2 611.51" stroke="rgba(51%2c 132%2c 194%2c 0.73)" stroke-width="2"%3e%3c/path%3e%3cpath d="M-186.12 498.07C-75.05 493.33 10.72 306.85 215.76 307.67 420.8 308.49 485.98 637.32 617.64 661.25" stroke="rgba(51%2c 132%2c 194%2c 0.73)" stroke-width="2"%3e%3c/path%3e%3cpath d="M-276.39 184.5C-101.36 187.73 34.29 407.24 385.13 414.1 735.97 420.96 870.83 649.68 1046.65 653.32" stroke="rgba(51%2c 132%2c 194%2c 0.73)" stroke-width="2"%3e%3c/path%3e%3cpath d="M-174.2 196.14C-35.44 198.58 66.3 366.44 351.21 375.34 636.12 384.24 729.88 631.38 876.62 638.61" stroke="rgba(51%2c 132%2c 194%2c 0.73)" stroke-width="2"%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id="SvgjsMask1000"%3e%3crect width="1440" height="560" fill="text-800"%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e');
+      background-image: url('./public/assets/img/bg-img/pexels-cottonbro-studio-4101143.jpg');
       background-size: cover;
       background-position: center;
     }
-    .overlay {
-    position: absolute;
+    .homeoverlay {
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(0,0,0);
-    background: linear-gradient(-90deg, #8e002dec 15%, #8e002d4e 60%, rgba(0,0,0,0.05) 100%);
+    background: linear-gradient(-90deg, #ffffff00 0%, #000000a9 35%,  #000000e4 100%);
+    z-index: 1;
 }
+  .shadow-info::before{
+    background-color: #630014;
+  }
 </style>
 
   <body>
     <main style="--phoenix-scroll-margin-top: 1.2rem;">
-      <div class="bg-text-800 sticky-top landing-navbar" data-navbar-shadow-on-scroll="data-navbar-shadow-on-scroll">
-        <nav class="navbar navbar-expand-lg container-small px-3 px-lg-7 px-xxl-3"><a class="navbar-brand flex-1 flex-lg-grow-0" href="./public/index.html">
-            <div class="d-flex align-items-center"><img class="d-dark-none overflow-hidden" src="./public/assets/img/logos/Rove__2_-removebg-preview (1).png" width="110" alt="" /><img class="d-light-none" src="./public/assets/img/logos/Rove__3___1_-removebg-preview.png" width="110" alt="" />
+      <!-- <div class="text-900 landing-navbar">
+        <nav class="navbar navbar-expand-lg container-small">
+          <a class="navbar-brand flex-1 flex-lg-grow-0" href="./public/index.html">
+            <div class="d-flex align-items-center">
+              <img class="d-dark-none overflow-hidden" src="./public/assets/img/logos/1_1_-removebg-preview (1).png" width="110" alt="" />
              
             </div>
           </a>
-          <div class="d-lg-none">
-            <div class="theme-control-toggle fa-icon-wait px-2">
-              <input class="form-check-input ms-0 theme-control-toggle-input" type="checkbox" data-theme-control="phoenixTheme" value="dark" id="themeControlToggleSm" />
-              <label class="mb-0 theme-control-toggle-label theme-control-toggle-light" for="themeControlToggleSm" data-bs-toggle="tooltip" data-bs-placement="left" title="Switch Mode"><span class="icon" data-feather="moon"></span></label>
-              <label class="mb-0 theme-control-toggle-label theme-control-toggle-dark" for="themeControlToggleSm" data-bs-toggle="tooltip" data-bs-placement="left" title="Switch Mode"><span class="icon" data-feather="sun"></span></label>
-            </div>
-          </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item-bottom-bottom-lg-0"><a class="nav-link lh-1 py-0  fw-bold py-3 active" aria-current="page" href="#">Home</a></li>
-              <li class="nav-item-bottom-bottom-lg-0"><a class="nav-link lh-1 py-0  fw-medium py-3" href="#servicesSection">Coach</a></li>
               <li class="nav-item-bottom-bottom-lg-0"><a class="nav-link lh-1 py-0  fw-medium py-3" href="#servicesSection">Services</a></li>
               <li class="nav-item"><a class="nav-link lh-1 py-0  fw-medium py-3" href="#team">About Us</a></li>
               <li class="nav-item"><a class="nav-link lh-1 py-0 fw-medium py-3" href="#contact">Contact</a></li>
             </ul>
           </div>
-          <div class="d-grid d-lg-flex align-items-center">
-            <div class="nav-item d-flex align-items-center d-none d-lg-block pe-2">
-              <div class="theme-control-toggle fa-icon-wait px-2">
-                <input class="form-check-input ms-0 theme-control-toggle-input" type="checkbox" data-theme-control="phoenixTheme" value="dark" id="themeControlToggle" />
-                <label class="mb-0 theme-control-toggle-label theme-control-toggle-light" for="themeControlToggle" data-bs-toggle="tooltip" data-bs-placement="left" title="Switch Mode"><span class="icon" data-feather="moon"></span></label>
-                <label class="mb-0 theme-control-toggle-label theme-control-toggle-dark" for="themeControlToggle" data-bs-toggle="tooltip" data-bs-placement="left" title="Switch Mode"><span class="icon" data-feather="sun"></span></label>
-              </div>
-            </div>
-          </div>
-
+          
         </nav>
-      </div>
-      <!-- <span class="multiple-text text-primary"></span> -->
-
-      <section class="bg-text-800 pb-5" id="home">
-        <div class="d-flex justify-content-center">
-            <div class="text-start pb-3 order-0">
-              <h1 class="fs-3 fs-lg-4 fs-md-4 fs-lg-4 fs-xl-5 fs fw-bold mb-2 d-flex justify-content-center bannertext" style="font-family: 'Noto Serif Display', serif;">Professional and Accessible</h1>
-              <p class="pb-1 fs-1 fs-lg-1 fs-md-1 fs-lg-1 fs-xl-1 d-flex justify-content-center" >Life coach that will help you achieve and enter the best possible version of yourself through online Sessions and Consultations.</p>
-              
-              <div class="container" style="--phoenix-gutter-x: 0rem;">
-                <div class="row mb-3 d-flex justify-content-center">
-                  
-                  <div class="col-6">
-                    <div class="card text-800 overflow-hidden" style="max-height:25rem;">
-                      <img src="./public/assets/img/company/owner.png" alt="...">
+      </div> -->
+      
+      <nav class="navbar navbar-expand-lg container-small">
+        <a class=" flex-1 flex-lg-grow-0" href="./public/index.html">
+          <div class="d-flex align-items-center">
+            <img class="overflow-hidden" src="./public/assets/img/logos/1_1_-removebg-preview (1).png" width="80" alt="" />
+           
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item-bottom-bottom-lg-0"><a class="nav-link lh-1 py-0  fw-bold py-3 active" aria-current="page" href="#">Home</a></li>
+            <li class="nav-item-bottom-bottom-lg-0"><a class="nav-link lh-1 py-0  fw-medium py-3" href="#servicesSection">Services</a></li>
+            <li class="nav-item"><a class="nav-link lh-1 py-0  fw-medium py-3" href="#team">About Us</a></li>
+            <li class="nav-item"><a class="nav-link lh-1 py-0 fw-medium py-3" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <button class="btn btn-outline-danger me-1 mb-1" type="button">Book now <span class="fas fa-bookmark"></span> </button>
+      </nav>
+      <section class="d-flex align-items-center py-10" id="home">
+        
+        <div class="container-small text-start mb-10" style="z-index: 2;">
+          <h6 class="bannertext">Professional and Accessible</h6>
+          <h1 class="fs-4 fs-lg-5 fs-md-5 fs-lg-5 fs-xl-6 fs fw-bold pt-1 text-white" style="font-family: 'Varela Round', sans-serif; letter-spacing: 2px;">Online Life Coaching</h1>
+          <p class="pb-1 fs-sm fs-lg-1 fs-md-1 fs-lg-1 fs-xl-1 bannertext fw-medium" >Achieve and enter the best possible version of yourself with us.</p>
+          <button class="btn btn-danger me-1 mb-10 w-25" type="button">Book now <span class="fas fa-bookmark"></span> </button> 
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col p-2 d-flex justify-content-center">
+                  <div class="d-flex align-items-center">
+                    <img src="./public/assets/img/team/35.webp" class="rounded-5" width="80">
+                    <div class="ps-3">
+                      <h5 class="m-0">Jason Statelmern</h5>
+                      <p class="mb-0">Financial Analyst</p>
                     </div>
                   </div>
-                  <div class="col-6 text-start">
-                    <h4 class="servicesweoffer" style="margin-bottom: 0;">Rovilyn Dayton</h4>
-                    <p class="text-800 fw-bold pb-1">Life Coach and Consultant</p>
-                    <p class="fw-semi-bold" style="word-spacing: 3px;">Embark on a bespoke odyssey with me, <span class="fw-bold" style="background-clip: text;
-                      color: transparent;
-                      background-image: linear-gradient(180deg, #cd006a 0%, #8e002d 100%);">Rovilyn</span>, your premier online coach, curating an unparalleled transformation experience. In a world of complexities, I specialize in distilling profound insights and strategies, propelling you toward unparalleled success in your career, wellness, and life equilibrium.</p>
-                    <P class="fw-semi-bold pb-2" style="word-spacing: 3px;">Beyond the conventional coaching paradigm, I am not just your guide; I am your confidant and accomplice in your triumphs. Having traversed diverse terrains of experience, I comprehend the significance of a steadfast companion in your journey. Embark on this voyage towards an empowered and enriched existence. Unravel the extraordinary within you and commence this opulent tapestry of self-realization.</P>
-                    <div class="d-flex">
-                      <a class="btn btn-lg btn-outline-primary rounded-5 me-2 w-50" href="#drop">Find out more<i class="fa-solid fa-angle-right ms-2"></i></a>
-                      <a class="btn btn-lg text-white rounded-5 me-2 w-50" href="#settings-offcanvas" data-bs-toggle="offcanvas" style="background: linear-gradient(180deg, #cd006a 0%, #8e002d 100%); border: none;">Book a Session Now<i class="fa-solid fa-angle-right ms-2"></i></a>
+                </div>
+                <div class="col p-2 d-flex justify-content-center">
+                  <div class="d-flex align-items-center">
+                    <img src="./public/assets/img/gallery/23.png" class="rounded-2" width="125">
+                    <div class="ps-3">
+                      <h5 class="m-0">Jason Statelmern</h5>
+                      <p class="mb-0">Financial Analyst</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col p-2 d-flex justify-content-center">
+                  <div class="d-flex align-items-center">
+                    <img src="./public/assets/img/team/35.webp" class="rounded-5" width="80">
+                    <div class="ps-3">
+                      <h5 class="m-0">Jason Statelmern</h5>
+                      <p class="mb-0">Financial Analyst</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
-
+        <div class="homeoverlay"></div>
+        
       </section>
-      <section class="pt-10 pb-0" id="servicesSection">
+      <section class="pt-10 pb-10" id="servicesSection">
         <div class="bg-holder z-index-2 d-none d-md-block" style="background-image:url(./public/assets/img/bg/13.png);background-size:auto;background-position:right;">
         </div>
         <div class="container-small px-lg-7 px-xxl-3">
           <div class="position-relative z-index-2">
             <div class="row">
-              <div class="col-lg-6 text-start text-lg-center pe-xxl-3">
+              <div class="col-lg-6 text-start text-lg-start pe-xxl-3">
                 <h4 class=" fw-bolder mb-1" style="background-clip: text;
                       color: transparent;
                       background-image: linear-gradient(180deg, #c10342 0%, #630014 100%);">Services</h4>
                 <h2 class="mb-1 text-black lh-base" >Professional Online Coaching And Consultation.<br class="d-md-none" /></h2>
-                <p class="mb-4">Thanks to Cebuanas Encoding Services, centering at <b>$750/month</b> for full-time VA, you can offload the repetitive and mundane tasks, allowing us to handle them with pleasure. Meanwhile, you and your local team can channel your efforts into more productive and value-driven endeavors. Our core customer base is process serving agencies and we are most familiar with the workflows and various softwares that are used in that industry.</p>
-                <a class="btn btn-lg btn-outline-primary rounded-pill me-2" href="#drop">Book Session Now<i class="fa-solid fa-angle-right ms-2"></i></a>
+                <p class="mb-4">Thanks to Rovilyf Coaching, centering at <b>$750/month</b> </p>
+                <a class="btn btn-lg text-white rounded-5 me-2 w-50" href="#settings-offcanvas" data-bs-toggle="offcanvas" style="background: linear-gradient(180deg, #cd006a 0%, #8e002d 100%);: none;">Book a Session Now<i class="fa-solid fa-angle-right ms-2"></i></a>
               </div>
-              <div class="col-sm-6 col-lg-3 mt-3 text-start text-lg-center">
+              <div class="col-sm-6 col-lg-3 mt-3 text-start text-lg-start">
                 <div class="h-100 d-flex flex-column justify-content-between">
                   <div class="border-center-lg-solid ps-4">
                     <lord-icon
@@ -176,20 +195,20 @@
                     <div>
                       <h5 class="fw-bolder mb-2" style="background-clip: text;
                       color: transparent;
-                      background-image: linear-gradient(180deg, #c10342 0%, #630014 100%);">Live Online Sessions </h5>
-                      <p class="fw-semi-bold lh-sm rdmore">Our in-house team of talented designers and skilled programmers are dedicated to crafting visually stunning websites and web applications. They're not just about aesthetics; their creations are strategically designed to captivate new customers and enhance your workflow, ensuring a seamless fusion of form and function that drives your business forward.</p>
+                      background-image: linear-gradient(180deg, #c10342 0%, #630014 100%);">One-on-One Sessions </h5>
+                      <p class="lh-sm rdmore">Have a sincere, open and progressive consultation and coaching with our very own rovilyn dayton, all on your own for a more immersive and detailed conversation. Coaching and Consultation done with only you and your Coach!</p>
                     </div>
                     </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-3 mt-3 text-start text-lg-center">
+              <div class="col-sm-6 col-lg-3 mt-3 text-start text-lg-start">
                 <div class="h-100 d-flex flex-column">
                   <div class="border-center-lg-solid ps-4"><img class="pb-1" src="./public/assets/img/icons/discussion.png" width="45" alt="" />
                     <div class="pt-1">
                       <h5 class="fw-bolder mb-2" style="background-clip: text;
                       color: transparent;
                       background-image: linear-gradient(180deg, #c10342 0%, #630014 100%);">Online Group Sessions</h5>
-                      <p class="fw-semi-bold lh-sm">We've forged strategic alliances with industry leaders such as Digital Ocean, Amazon AWS, and GTHost to serve as the secure and reliable foundation for your applications. centering at <b>$350/month</b>, we expertly oversee the hosting, meticulous maintenance, and robust protection of your valuable assets, all on the dynamic platforms of Linux and FreeBSD.</p>
+                      <p class=" lh-sm">If you find getting consultations and coachings alone somehow intimidating, Worry no more! We have the perfect system for you. Scheduled everyweek of the Month except on holidays where we gather people alike into 1 amazing online coaching and consultation.</p>
                     </div>
                    </div>
                 </div>
@@ -198,92 +217,143 @@
           </div>
         </div>
       </section>
-
-      <div class="position-relative">
-        <div class="bg-holder z-index-2 d-none d-md-block d-lg-none d-xl-block" style="background-image:url(./public/assets/img/bg/bg-12.png);background-size:auto;background-position:left;">
-        </div>
-        <!--/.bg-holder-->
-
-        <div class="bottom-0 center-0 end-0 bg-text-800">
-          <svg class="w-100 text-soft" viewBox="0 0 1920 368" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1920 0.44L0 367.74V0H1920V0.44Z" fill="currentColor"></path>
-          </svg>
-        </div>
-      
-      </div>
-      <div class="position-relative">
-        <div class="bg-holder world-map-bg" style="background-image:url(./public/assets/img/bg/bg-rovelyf.png);">
-        </div>
-        
-        <section class="overflow-hidden z-index-2">
-          <div class="overlay"></div>
-          <div class="container-small light px-lg-7 px-xxl-3">
-            <div class="position-relative">
-              <div class="row mt-2 align-items-center justify-content-between text-center mb-3 mb-lg-0">
-                <div class="col-lg-6">
-                  <main class="reviewmain">
-                    <section class="reviewcontainer">
-                  
-                      <div class="reviewtitle">
-                        <h2>reviews</h2>
-                        <div class="underline"></div>
-                      </div>
-                  
-                      <article class="reviewsection">
-                        <div class="img-container">
-                          <img src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg" alt="" id="reviewperson-img" />
-                        </div>
-                  
-                        <h4 id="reviewauthor">sara jones</h4>
-                        <p id="reviewjob">ux designer</p>
-                        <p id="reviewinfo">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                          asperiores debitis incidunt, eius earum ipsam cupiditate libero?
-                          Iste, doloremque nihil?
-                        </p>
-                  
-                        <!-- prev next buttons-->
-                        <div class="button-container">
-                          <button class="prev-btn reviewbtn">
-                            <i class="fas fa-chevron-left"></i>
-                          </button>
-                          <button class="next-btn reviewbtn">
-                            <i class="fas fa-chevron-right"></i>
-                          </button>
-                        </div>
-                  
-                      </article>
-                  
-                    </section>
-                  </main>
+      <section class="overflow-auto" id="reviewcontainer">
+        <div class="container-small">
+          <h4 class="m-0 mb-1" style="letter-spacing: .5px;">Client Testimonials with Rovelyf.</h4>
+          <div class="d-flex align-items-center">
+            <div class="gap-2">
+              <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+              <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+              <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+              <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+              <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+            </div>
+            <p class="ps-2 m-0">5 / 5 Star Review</p>
+          </div>
+          <div class="hstack gap-2 mx-auto mt-3 card_container align-items-baseline">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <img src="./public/assets/img/team/35.webp" class="rounded-5" width="47">
+                    <div class="ps-3">
+                      <h5 class="m-0">Jason Statelmern</h5>
+                      <p class="mb-0">Financial Analyst</p>
+                    </div>
+                  </div>
+                  <div class="">
+                    <img src="./public/assets/img/logos/rovelyf_satisfiedmark.png" alt="" width="47">
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="m-0 mt-4 fw-medium">Remark</p>
+                  <div class="">
+                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="m-0 mt-2 fw-medium">Comment</p>
+                  <div class="description_box">
+                    <p class="m-0 mb-7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, officiis. Ut, impedit cupiditate hic debitis magnam fugiat ipsum, rerum voluptatem autem repellendus dolores blanditiis sapiente enim consectetur voluptates maiores officia.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, officiis. Ut, impedit cupiditate hic debitis magnam fugiat ipsum, rerum voluptatem autem repellendus dolores blanditiis sapiente enim consectetur voluptates maiores officia.</p>
+                    <button type="button">Read More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <img src="./public/assets/img/team/35.webp" class="rounded-5" width="47">
+                    <div class="ps-3">
+                      <h5 class="m-0">Jason Statelmern</h5>
+                      <p class="mb-0">Financial Analyst</p>
+                    </div>
+                  </div>
+                  <div class="">
+                    <img src="./public/assets/img/logos/rovelyf_satisfiedmark.png" alt="" width="47">
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="m-0 mt-4 fw-medium">Remark</p>
+                  <div class="">
+                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="m-0 mt-2 fw-medium">Comment</p>
+                  <div class="description_box">
+                    <p class="m-0 mb-7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, officiis. Ut, impedit cupiditate hic debitis magnam fugiat ipsum, rerum voluptatem autem repellendus dolores blanditiis sapiente enim consectetur voluptates maiores officia.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, officiis. Ut, impedit cupiditate hic debitis magnam fugiat ipsum, rerum voluptatem autem repellendus dolores blanditiis sapiente enim consectetur voluptates maiores officia.</p>
+                    <button type="button">Read More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <img src="./public/assets/img/team/35.webp" class="rounded-5" width="47">
+                    <div class="ps-3">
+                      <h5 class="m-0">Jason Statelmern</h5>
+                      <p class="mb-0">Financial Analyst</p>
+                    </div>
+                  </div>
+                  <div class="">
+                    <img src="./public/assets/img/logos/rovelyf_satisfiedmark.png" alt="" width="47">
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="m-0 mt-4 fw-medium">Remark</p>
+                  <div class="">
+                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="m-0 mt-2 fw-medium">Comment</p>
+                  <div class="description_box">
+                    <p class="m-0 mb-7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, officiis. Ut, impedit cupiditate hic debitis magnam fugiat ipsum, rerum voluptatem autem repellendus dolores blanditiis sapiente enim consectetur voluptates maiores officia.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, officiis. Ut, impedit cupiditate hic debitis magnam fugiat ipsum, rerum voluptatem autem repellendus dolores blanditiis sapiente enim consectetur voluptates maiores officia.</p>
+                    <button type="button">Read More</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </div>
+                    
+        </div>
+        
+
+      </section>
 
 
-      <section class="bg-text-800 pt-5">
+      <section class="bg-text-900 pt-5">
         <div class="container-small px-lg-7 px-xxl-3">
           <div class="row g-5 g-lg-5" id="contact">
             <div class="col-md-6 mb-5 mb-md-0 text-start text-md-start">
               <h3 class="mb-3" style="color:#820043">Stay connected</h3>
-              <p class="mb-5">Stay connected with us; Cebuanas Encoding Services is available for your necessities at all times.</p>
+              <p class="mb-5">To stay connected and contact us for more information, refer down below.</p>
               <div class="d-flex flex-column align-items-start align-items-md-start gap-4 gap-md-0">
                 <div class="d-md-flex align-items-center">
-                  <div class="icon-wrapper shadow-info"><span class="uil uil-phone text-primary light fs-4 z-index-1 ms-2"></span></div>
-                  <div class="flex-1 ms-3"><a class="link-900" href="tel:+871406-7509">(63+) 995.591.8676</a></div>
+                  <div class="icon-wrapper shadow-info"><span class="uil uil-phone text-900  fs-4 z-index-1 ms-2"></span></div>
+                  <div class="flex-1 ms-3"><a class="link-900" href="tel:+832.392.5501">832.392.5501</a></div>
                 </div>
                 <div class="d-md-flex align-items-center">
-                  <div class="icon-wrapper shadow-info"><span class="uil uil-envelope text-primary light fs-4 z-index-1 ms-2"></span></div>
-                  <div class="flex-1 ms-3"><a class="fw-semi-bold text-900" href="mailto:cebuanasencodingservices@yahoo.com">cebuanasencodingservices@yahoo.com</a></div>
+                  <div class="icon-wrapper shadow-info"><span class="uil uil-envelope text-900  fs-4 z-index-1 ms-2"></span></div>
+                  <div class="flex-1 ms-3"><a class="fw-semi-bold text-900" href="mailto:rovilynpelayo@gmail.com">rovilynpelayo@gmail.com </a></div>
                 </div>
-                <div class="mb-6 d-md-flex align-items-center">
-                  <div class="icon-wrapper shadow-info"><span class="uil uil-map-marker text-primary light fs-4 z-index-1 ms-2"></span></div>
-                  <div class="flex-1 ms-3"><a class="fw-semi-bold text-900" href="#!">PUROK MAHOGANY POBLACION WARD II, MINGLANILLA, CEBU 6046, PHILIPPINES</a></div>
-                </div>
-                <div class="d-flex"><a href="#!"><span class="fa-brands fa-facebook fs-2 text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-twitter fs-2 text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-linkedin-in fs-2 text-primary"></span></a></div>
+                
               </div>
             </div>
             <div class="col-md-6 text-start text-md-start" id="drop">
@@ -292,13 +362,13 @@
               
               <form class="row g-4" target="_blank" action="https://formsubmit.co/9d0a4972cb0a9e133a84723e2ccb4fa0" method="POST">
                 <div class="col-12">
-                  <input class="form-control bg-text-800" type="text" name="name" class="form-control" placeholder="Enter Your Full Name" required />
+                  <input class="form-control bg-text-900" type="text" name="name" class="form-control" placeholder="Enter Your Full Name" required />
                 </div>
                 <div class="col-12">
-                  <input class="form-control bg-text-800" type="email" name="email" class="form-control" placeholder="Enter Your Email Address" required />
+                  <input class="form-control bg-text-900" type="email" name="email" class="form-control" placeholder="Enter Your Email Address" required />
                 </div>
                 <div class="col-12">
-                  <textarea class="form-control bg-text-800" rows="6" placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                  <textarea class="form-control bg-text-900" rows="6" placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
                 </div>
                 <div class="col-12 d-grid">
                   <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
@@ -310,7 +380,7 @@
       </section>
 
       <div class="position-relative">
-        <div class="bg-holder footer-bg" style="background-image:url(./public/assets/img/bg/bg-19.png);background-size:auto;">
+        <div class="bg-holder footer-bg" style="background-image:url(./public/assets/img/bg/bg-rovelyf\ \(2\).png);background-size:cover;">
         </div>
         <div class="bg-holder" style="background-image:url(./public/assets/img/bg/bg-right-20.png);background-position:right;background-size:auto;">
         </div>
@@ -323,9 +393,8 @@
             <div class="container-small px-lg-7 px-xxl-3">
               <div class="row position-relative">
                 <div class="col-12 col-sm-12 col-lg-5 mb-2 order-0 order-sm-0">
-                  <img class="d-dark-none overflow-hidden" src="./public/assets/img/logos/Rove__2_-removebg-preview (1).png" width="110" alt="" />
-                  <img class="d-light-none" src="./public/assets/img/logos/Rove__3___1_-removebg-preview.png" width="110" alt="" />
-                  <p class="text-white">Liberated Mind,<br />Best version of yourself.</p>
+                  <img class="d-dark-none overflow-hidden" src="./public/assets/img/logos/1_1_-removebg-preview (1).png" width="110" alt="" />
+                  <p class="text-dark">Liberated Mind,<br /><span class="fw-bolder" style="color:#990017ce">Best version of yourself.</span></p>
                 </div>
                 
                   
@@ -334,72 +403,28 @@
                   <div class="row justify-content-between">
                     <div class="col-6 col-sm-4 col-lg-3 mb-3 order-2 order-sm-1">
                       <div class="border-dashed-center-primary-300 ps-3" style="--phoenix-border-opacity: .2;">
-                        <h5 class="fw-bolder mb-2 text-light light">Help</h5>
+                        <h5 class="fw-bolder mb-2" style="color:#630014">Help</h5>
                         <ul class="list-unstyled mb-3">
-                          <li class="mb-1"><a class="text-500 hover-text-100 light" href="#team">Home</a></li>
-                          <li class="mb-1"><a class="text-500 hover-text-100 light" href="#contact">Coach</a></li>
-                          <li class="mb-1"><a class="text-500 hover-text-100 light" href="#team">Home</a></li>
-                          <li class="mb-1"><a class="text-500 hover-text-100 light" href="#contact">Coach</a></li>
+                          <li class="mb-1"><a class="text-900 hover-text-100 " href="#team">Home</a></li>
+                          <li class="mb-1"><a class="text-900 hover-text-100 " href="#contact">Services</a></li>
+                          <li class="mb-1"><a class="text-900 hover-text-100 " href="#team">About us</a></li>
+                          <li class="mb-1"><a class="text-900 hover-text-100 " href="#contact">Contact</a></li>
                         </ul>
                       </div>
 
                     </div>
                     <div class="col-6 col-sm-4 col-lg-3 mb-3 order-3 order-sm-2">
                       <div class="border-dashed-center-primary-300 ps-3" style="--phoenix-border-opacity: .2;">
-                        <h5 class="lh-lg fw-bold text-light mb-2 light">Follow</h5>
+                        <h5 class="lh-lg fw-bold mb-2" style="color:#630014">Social Media</h5>
                         <ul class="list-unstyled mb-md-2">
-                          <li class="mb-1"><a class="text-500 hover-text-100 light" href="#!">Facebook</a></li>
-                          <li class="mb-1"><a class="text-500 hover-text-100 light" href="#!">LinkedIn</a></li>
+                          <li class="mb-1"><a class="text-900 hover-text-100 " href="#!">Facebook</a></li>
+                          <li class="mb-1"><a class="text-900 hover-text-100 " href="#!">LinkedIn</a></li>
                         </ul>
                       </div>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-3 mb-3 order-3 order-sm-2">
                       <div class="border-dashed-center ps-3" style="--phoenix-border-opacity: .2;">
-                        <h5 class="lh-lg fw-bold text-light mb-2 light">INFO</h5>
-                        <ul class="list-unstyled mb-md-2">
-                          <button class="btn text-500 hover-text-100 light fw-300" type="button" data-bs-toggle="modal" data-bs-target="#longDTI">DTI</button>
-                            <div class="modal fade" id="longDTI" tabindex="-1" aria-labelledby="scrollingLongModalLabel" aria-hidden="true" style="display: none;">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="scrollingLongModalLabel">DTI Certifications</h5><button class="btn p-1" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-inline--fa fa-xmark " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.35C304.4 412.9 296.2 416 288 416s-16.38-3.135-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.35l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.35s32.75-12.5 45.35 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.35 0s12.5 32.75 0 45.35l-105.4 105.4L310.6 361.4z"></path></svg><!-- <span class="fas fa-times "></span> Font Awesome fontawesome.com --></button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="./public/assets/img/certifcates/2023_dti.jpg" style="width: 100%;"></img>
-                                  </div>
-                                </div>
-                              </div>
-                            </div> 
-                            <br />
-                            <button class="btn text-500 hover-text-100 light fw-300" type="button" data-bs-toggle="modal" data-bs-target="#longDTI">BMBE</button>
-                            <div class="modal fade" id="longDTI" tabindex="-1" aria-labelledby="scrollingLongModalLabel" aria-hidden="true" style="display: none;">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="scrollingLongModalLabel">BMBE Certifications</h5><button class="btn p-1" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-inline--fa fa-xmark " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.35C304.4 412.9 296.2 416 288 416s-16.38-3.135-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.35l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.35s32.75-12.5 45.35 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.35 0s12.5 32.75 0 45.35l-105.4 105.4L310.6 361.4z"></path></svg><!-- <span class="fas fa-times "></span> Font Awesome fontawesome.com --></button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="./public/assets/img/certifcates/2023_bmbe.jpg" style="width: 100%;"></img>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <br />
-                            <button class="btn text-500 hover-text-100 light fw-300" type="button" data-bs-toggle="modal" data-bs-target="#longBMBE">Barangay<span><br />Clearance</span></button>
-                            <div class="modal fade" id="longBMBE" tabindex="-1" aria-labelledby="scrollingLongModalLabel" aria-hidden="true" style="display: none;">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h6 class="modal-title" id="scrollingLongModalLabel">Barangay Clearance Certifications</h6><button class="btn p-1" type="button" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-inline--fa fa-xmark " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.35C304.4 412.9 296.2 416 288 416s-16.38-3.135-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.35l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.35s32.75-12.5 45.35 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.35 0s12.5 32.75 0 45.35l-105.4 105.4L310.6 361.4z"></path></svg><!-- <span class="fas fa-times "></span> Font Awesome fontawesome.com --></button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="./public/assets/img/certifcates/174555CF-B3A3-47F5-A363-B4F1A1C22C95-1.png" style="width: 100%;"></img>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            
-                        </ul>
+                        <div class="d-flex"><a href="#!"><span class="fa-brands fa-facebook fs-2 text-900 me-3"></span></a><a href="#!"><span class="fa-brands fa-twitter fs-2 text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-linkedin-in fs-2 text-primary"></span></a></div>
                       </div>
                     </div>
                   </div>
@@ -410,52 +435,10 @@
 
         </div>
       </div>
-      <div class="support-chat-container">
-        <div class="container-fluid support-chat">
-          <div class="card bg-text-800">
-            <div class="card-header d-flex flex-between-center px-4 py-3-bottom">
-              <h5 class="mb-0 d-flex align-items-center gap-2">Demo widget<span class="fa-solid fa-circle text-success fs--3"></span></h5>
-              <div class="btn-reveal-trigger">
-                <button class="btn btn-link p-0 dropdown-toggle dropdown-caret-none transition-none d-flex" type="button" id="support-chat-dropdown" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h text-900"></span></button>
-                <div class="dropdown-menu dropdown-menu-end py-2" aria-labelledby="support-chat-dropdown"><a class="dropdown-item" href="#!">Request a callback</a><a class="dropdown-item" href="#!">Search in chat</a><a class="dropdown-item" href="#!">Show history</a><a class="dropdown-item" href="#!">Report to Admin</a><a class="dropdown-item btn-support-chat" href="#!">Close Support</a></div>
-              </div>
-            </div>
-            <div class="card-body chat p-0">
-              <div class="d-flex flex-column-reverse scrollbar h-100 p-4">
-                <div class="text-end mt-6"><a class="mb-2 d-inline-flex align-items-center text-decoration-none text-1100 hover-bg-soft rounded-pill-primary py-2 ps-4 pe-3" href="#!">
-                    <p class="mb-0 fw-semi-bold ">I need help with something</p><span class="fa-solid fa-paper-plane text-primary  ms-3"></span>
-                  </a><a class="mb-2 d-inline-flex align-items-center text-decoration-none text-1100 hover-bg-soft rounded-pill-primary py-2 ps-4 pe-3" href="#!">
-                    <p class="mb-0 fw-semi-bold ">I can’t reorder a product I previously ordered</p><span class="fa-solid fa-paper-plane text-primary  ms-3"></span>
-                  </a><a class="mb-2 d-inline-flex align-items-center text-decoration-none text-1100 hover-bg-soft rounded-pill-primary py-2 ps-4 pe-3" href="#!">
-                    <p class="mb-0 fw-semi-bold ">How do I place an order?</p><span class="fa-solid fa-paper-plane text-primary  ms-3"></span>
-                  </a><a class="false d-inline-flex align-items-center text-decoration-none text-1100 hover-bg-soft rounded-pill-primary py-2 ps-4 pe-3" href="#!">
-                    <p class="mb-0 fw-semi-bold ">My payment method not working</p><span class="fa-solid fa-paper-plane text-primary  ms-3"></span>
-                  </a>
-                </div>
-                <div class="text-start mt-auto">
-                  <div class="avatar avatar-3xl status-online"><img class="rounded-circle-3-text-800" src="./public/assets/img/team/30.webp" alt="" /></div>
-                  <h5 class="mt-2 mb-3">Eric</h5>
-                  <p class="text-start text-black mb-0">Ask us anything – we’ll get back to you here or by email within 24 hours.</p>
-                </div>
-              </div>
-            </div>
-            <div class="card-footer d-flex align-items-center gap-2-top ps-3 pe-4 py-3">
-              <div class="d-flex align-items-center flex-1 gap-4 rounded-pill px-4">
-                <input class="form-control outline-none-0 flex-1  px-0" type="text" placeholder="Write message" />
-                <label class="btn btn-link d-flex p-0 text-500 -0" for="supportChatPhotos"><span class="fa-solid fa-image"></span></label>
-                <input class="d-none" type="file" accept="image/*" id="supportChatPhotos" />
-                <label class="btn btn-link d-flex p-0 text-500 -0" for="supportChatAttachment"> <span class="fa-solid fa-paperclip"></span></label>
-                <input class="d-none" type="file" id="supportChatAttachment" />
-              </div>
-              <button class="btn p-0-0 send-btn"><span class="fa-solid fa-paper-plane "></span></button>
-            </div>
-          </div>
-        </div>
-      </div>
     </main>
     <!-- ! END OF MAIN CONTENT -->
     <div class="offcanvas offcanvas-end settings-panel-0" id="settings-offcanvas" tabindex="-1" aria-labelledby="settings-offcanvas">
-      <div class="offcanvas-header align-items-center-bottom flex-column">
+      <div class="offcanvas-header align-items-center pb-0 flex-column">
         <div class="pt-1 w-100 d-flex justify-content-between align-items-center">
           <div>
             <h5 class="mb-2 me-2 lh-sm"><span class="fas fa-palette me-2 fs-0"></span>Coaching Session With Rovi</h5>
@@ -465,38 +448,42 @@
         </div>
       </div>
       
-      <div class="offcanvas-body scrollbar px-card pt-0" id="themeController">
+      <div class="offcanvas-body scrollbar pt-0 bg-light-success rounded p-3 m-3" id="themeController">
         <div class="">
-          <div class="h-100">
+          <div class="h-100 ">
             <input class="pricing-plan-radio d-none pricing-plan-recommended" type="radio" name="pricingMonthly" id="businessPlus" />
-            <div class="position-relative h-100">
+            <div class="position-relative">
               <label class="stretched-link" for="businessPlus"></label>
-              <div class="card h-100 overflow-hidden cursor-pointer bg-warning-soft border-warning warning-boxshadow pricing-business-plus">
-                <div class="bg-holder d-dark-none" style="background-image:url(../../assets/img/bg/bg-11.png);background-position:left bottom;background-size:auto;">
+              <div class="d-flex align-items-sm-center pb-2">
+                <h4>Package Promo</h4><span class="fas fa-star fs-sm px-1" style="color: rgb(255, 217, 0);"></span>
+              </div>
+              <div class="card h-100 overflow-hidden cursor-pointer bg-warning-soft-warning warning-boxshadow pricing-business-plus">
+                <div class="bg-holder d-dark-none" style="background-image:url(./public/assets/img/bg/bg-11.png);background-position:left bottom;background-size:auto;">
                 </div>
                 <!--/.bg-holder-->
 
-                <div class="bg-holder d-light-none" style="background-image:url(../../assets/img/bg/bg-11-dark.png);background-position:left bottom;background-size:auto;">
+                <div class="bg-holder d--none" style="background-image:url(./public/assets/img/bg/bg-11-dark.png);background-position:left bottom;background-size:auto;">
                 </div>
                 <!--/.bg-holder-->
-
                 <div class="card-body d-flex flex-column justify-content-between position-relative">
                   <div class="d-flex justify-content-between">
                     <div class="mb-5 mb-md-0 mb-lg-5 me-3">
-                      <div class="d-sm-flex d-md-block d-lg-flex align-items-center mb-3">
-                        <h3 class="mb-0">Business Plus</h3><span class="badge ms-sm-3 ms-md-0 ms-lg-3 text-uppercase fs--2 bg-warning">recommended</span>
+                      <div class="d-sm-flex d-md-block d-lg-flex align-items-start mb-2">
+                        <h4 class="mb-0">SELF LIBERATION <span class="badge ms-sm-2 ms-md-0 ms-lg-2 text-uppercase fs--3 bg-warning">recommended</span></h4>
                       </div>
-                      <p class="fs--1 text-700">For teams that need to manage <br> work across initiatives.</p>
+                      <h5 class="text-warning">6 Sessions + 2</h5>
+                      <p class="fs--1 text-700">Have a special 1 on 1 online coaching with the very own, Rovilyn Dayton.</p>
                       <div class="d-flex align-items-end mb-md-5 mb-lg-0">
                         <h4 class="fw-bolder me-1">$49.99</h4>
-                        <h5 class="fs--1 fw-normal text-700 ms-1">Per month</h5>
+                        <h5 class="fs--1 fw-normal text-700 ms-sm">/ Package</h5>
                       </div>
-                    </div><img class="d-dark-none" src="../../assets/img/spot-illustrations/star.png" width="54" height="54" alt="" /><img class="d-light-none" src="../../assets/img/spot-illustrations/star-dark.png" width="54" height="54" alt="" />
+                    </div>
+                    <img class="d-dark-none" src="./public/assets/img/spot-illustrations/star.png" width="54" height="54" alt="" />
                   </div>
                   <div class="row flex-1 justify-content-end">
                     <div class="col-sm-8 col-md-12">
                       <div class="d-sm-flex d-md-block d-lg-flex justify-content-end align-items-end h-100">
-                        <ul class="list-unstyled mb-0 border-start-sm border-start-md-0 border-start-lg ps-sm-5 ps-md-0 ps-lg-5 border-warning-300">
+                        <ul class="list-unstyled mb-0-start-sm-start-md-0-start-lg ps-sm-5 ps-md-0 ps-lg-5-warning-300">
                           <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-semi-bold">Technical Supports</span></li>
                           <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-semi-bold">Up to 20 Members</span></li>
                           <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-semi-bold">Create & Share libraries</span></li>
@@ -510,17 +497,18 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-12 col-xl-6">
+        <!-- TODO: END OF CARD 1 -->
+        <div class="pb-3">
           <div class="h-100">
-            <input class="pricing-plan-radio d-none" type="radio" name="pricingYearly" id="standardYearly" />
+            <input class="pricing-plan-radio d-none" type="radio" name="pricingMonthly" id="standard" />
             <div class="position-relative h-100">
-              <label class="stretched-link" for="standardYearly"></label>
+              <label class="stretched-link" for="standard"></label>
               <div class="card h-100 overflow-hidden cursor-pointer">
-                <div class="bg-holder d-dark-none" style="background-image:url(../../assets/img/bg/9.png);background-position:left bottom;background-size:auto;">
+                <div class="bg-holder d-dark-none" style="background-image:url(./public/assets/img/bg/9.png);background-position:left bottom;background-size:auto;">
                 </div>
                 <!--/.bg-holder-->
 
-                <div class="bg-holder d-light-none" style="background-image:url(../../assets/img/bg/9-dark.png);background-position:left bottom;background-size:auto;">
+                <div class="bg-holder d--none" style="background-image:url(./public/assets/img/bg/9-dark.png);background-position:left bottom;background-size:auto;">
                 </div>
                 <!--/.bg-holder-->
 
@@ -528,19 +516,21 @@
                   <div class="d-flex justify-content-between">
                     <div class="mb-5 mb-md-0 mb-lg-5 me-3">
                       <div class="d-sm-flex align-items-center mb-3">
-                        <h3 class="mb-0">Standard</h3>
+                        <h3 class="mb-0">GROUP SESSION</h3>
                       </div>
-                      <p class="fs--1 text-700">For teams that need to create <br> project plans with confidence.</p>
+                      <h5 class="text-warning">6 Sessions + 1</h5>
+                      <p class="fs--1 text-700">For people who feel more comfortable <br> on session together with other people.</p>
                       <div class="d-flex align-items-end mb-md-5 mb-lg-0">
-                        <h4 class="fw-bolder me-1">$179.88</h4>
-                        <h5 class="fs--1 fw-normal text-700 ms-1">Per year</h5>
+                        <h4 class="fw-bolder me-1">$39.99</h4>
+                        <h5 class="fs--1 fw-normal text-700 ms-sm">/ Package</h5>
                       </div>
-                    </div><img class="d-dark-none" src="../../assets/img/spot-illustrations/bag-2.png" width="54" height="54" alt="" /><img class="d-light-none" src="../../assets/img/spot-illustrations/bag-2-dark.png" width="54" height="54" alt="" />
+                    </div>
+                    <img class="d-dark-none" src="./public/assets/img/spot-illustrations/bag-2.png" width="54" height="54" alt="" />
                   </div>
                   <div class="row flex-1 justify-content-end">
                     <div class="col-sm-8 col-md-12">
                       <div class="d-sm-flex d-md-block d-lg-flex justify-content-end align-items-end h-100">
-                        <ul class="list-unstyled mb-0 border-start-sm border-start-md-0 border-start-lg ps-sm-5 ps-md-0 ps-lg-5 border-200">
+                        <ul class="list-unstyled mb-0-start-sm-start-md-0-start-lg ps-sm-5 ps-md-0 ps-lg-5-200">
                           <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-semi-bold">Up to 8 Members</span></li>
                           <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-semi-bold">Create & Share libraries</span></li>
                           <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-semi-bold">10 Collaboration projects</span></li>
@@ -553,19 +543,26 @@
             </div>
           </div>
         </div>
-    <a class="card setting-toggle" href="#settings-offcanvas" data-bs-toggle="offcanvas">
-      <div class="card-body d-flex align-items-center px-2 py-1">
-        <div class="position-relative rounded-center" style="height:34px;width:28px">
-            <lord-icon
-                src="https://cdn.lordicon.com/egmlnyku.json"
-                trigger="hover"
-                style="width:30px;height:35px">
-            </lord-icon>
-        </div>
-        <!-- <small class="text-uppercase text-700 fw-bold py-2 pe-2 ps-1 rounded-end">SUBSCRIBE</small> -->
-      </div>
-    </a>
 
+        <div class="container-small bg-light-danger p-2 rounded">
+          <div class="d-flex align-items-center">
+            <h5>On the Spot Sessions</h5>
+          </div>
+          <div class="row px-3">
+            <div class="col p-2">
+              <div class="card">
+                
+              </div>
+            </div>
+            <div class="col p-2">
+              <div class="card">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script src="./public/vendors/popper/popper.min.js"></script>
     <script src="./public/vendors/bootstrap/bootstrap.min.js"></script>
@@ -587,14 +584,24 @@
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./public/assets/js/default.js"></script>
-
+    
     <script>
-      var map = L.map('map').setView([10.244149, 123.795020], 30);
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-      L.marker([10.244149, 123.795020]).addTo(map)
-          .bindPopup('Exact location of our Ward II Office').openPopup();
-    </script>
+      
+    let description_box = document.querySelectorAll(".description_box");
 
+    description_box.forEach(element => {
+      let button = element.querySelector("button");
+      button.onclick = function(){
+          element.classList.toggle("active");
+          button.classList.toggle("active_button");
+          if(button.classList.contains("active_button")){
+            button.innerHTML = "Read Less";
+          }else{
+            button.innerHTML = "Read More";
+          }
+      }
+    });
+    </script>
     <script>
       $(document).ready(function(){
       var maxLength = 100;
