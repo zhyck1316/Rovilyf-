@@ -56,7 +56,7 @@
   <style>
     .bannertext {
       background-clip: text;
-      color: #ce0042;
+      color: #ed2000;
       font-family: 'Varela Round', sans-serif;
       letter-spacing: 2px;
     }
@@ -69,6 +69,7 @@
       background-image: url('./public/assets/img/bg-img/pexels-cottonbro-studio-4101143.jpg');
       background-size: cover;
       background-position: center;
+      height: 95dvh;
     }
     .homeoverlay {
     position: absolute; 
@@ -81,6 +82,16 @@
 }
   .shadow-info::before{
     background-color: #630014;
+  }
+  .fblink, .twitterlink, .linkedinlink{
+    color: #ED2000;
+    border: 2px solid #ED2000;
+  }
+  .fblink:hover, 
+  .twitterlink:hover, 
+  .linkedinlink:hover{
+    color:rgb(255, 255, 255);
+    border: 2px solid white;
   }
 </style>
 
@@ -110,7 +121,7 @@
       <nav class="navbar navbar-expand-lg container-small">
         <a class=" flex-1 flex-lg-grow-0" href="./public/index.html">
           <div class="d-flex align-items-center">
-            <img class="overflow-hidden" src="./public/assets/img/logos/1_1_-removebg-preview (1).png" width="80" alt="" />
+            <img class="overflow-hidden" src="./public/assets/img/logos/rove_headerlogo.png" width="80" alt="" />
            
           </div>
         </a>
@@ -118,70 +129,36 @@
         <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item-bottom-bottom-lg-0"><a class="nav-link lh-1 py-0  fw-bold py-3 active" aria-current="page" href="#">Home</a></li>
-            <li class="nav-item-bottom-bottom-lg-0"><a class="nav-link lh-1 py-0  fw-medium py-3" href="#servicesSection">Services</a></li>
-            <li class="nav-item"><a class="nav-link lh-1 py-0  fw-medium py-3" href="#team">About Us</a></li>
+            <li class="nav-item-bottom-bottom-lg-0"><a class="nav-link lh-1 py-0  fw-medium py-3" href="#servicessection">Services</a></li>
+            <li class="nav-item-bottom-bottom-lg-0"><a class="nav-link lh-1 py-0  fw-medium py-3" href="#reviewsection">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link lh-1 py-0  fw-medium py-3" href="#rovesection ">About Us</a></li>
             <li class="nav-item"><a class="nav-link lh-1 py-0 fw-medium py-3" href="#contact">Contact</a></li>
           </ul>
         </div>
-        <button class="btn btn-outline-danger me-1 mb-1" type="button">Book now <span class="fas fa-bookmark"></span> </button>
+        <button class="btn btn-outline-danger me-1 mb-1" href="#settings-offcanvas" data-bs-toggle="offcanvas" type="button">Book now <span class="fas fa-bookmark"></span> </button>
       </nav>
       <section class="d-flex align-items-center py-10" id="home">
         
         <div class="container-small text-start mb-10" style="z-index: 2;">
-          <h6 class="bannertext">Professional and Accessible</h6>
-          <h1 class="fs-4 fs-lg-5 fs-md-5 fs-lg-5 fs-xl-6 fs fw-bold pt-1 text-white" style="font-family: 'Varela Round', sans-serif; letter-spacing: 2px;">Online Life Coaching</h1>
-          <p class="pb-1 fs-sm fs-lg-1 fs-md-1 fs-lg-1 fs-xl-1 bannertext fw-medium" >Achieve and enter the best possible version of yourself with us.</p>
-          <button class="btn btn-danger me-1 mb-10 w-25" type="button">Book now <span class="fas fa-bookmark"></span> </button> 
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col p-2 d-flex justify-content-center">
-                  <div class="d-flex align-items-center">
-                    <img src="./public/assets/img/team/35.webp" class="rounded-5" width="80">
-                    <div class="ps-3">
-                      <h5 class="m-0">Jason Statelmern</h5>
-                      <p class="mb-0">Financial Analyst</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col p-2 d-flex justify-content-center">
-                  <div class="d-flex align-items-center">
-                    <img src="./public/assets/img/gallery/23.png" class="rounded-2" width="125">
-                    <div class="ps-3">
-                      <h5 class="m-0">Jason Statelmern</h5>
-                      <p class="mb-0">Financial Analyst</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col p-2 d-flex justify-content-center">
-                  <div class="d-flex align-items-center">
-                    <img src="./public/assets/img/team/35.webp" class="rounded-5" width="80">
-                    <div class="ps-3">
-                      <h5 class="m-0">Jason Statelmern</h5>
-                      <p class="mb-0">Financial Analyst</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h5 class="bannertext pt-5 pb-1 fw-medium">Professional and Accessible</h5>
+          <h1 class="fs-4 fs-lg-5 fs-md-5 fs-lg-5 fs-xl-6 fs fw-bold pt-1 text-white pb-3" style="font-family: 'Varela Round', sans-serif; letter-spacing: 2px;">Online Life Coaching</h1>
+          <h4 class="pb-1 fs-sm fs-lg-1 fs-md-1 fs-lg-1 fs-xl-1 bannertext fw-light pb-5" >Achieve and enter the best possible version of yourself with us.</h4>
+          <button class="btn btn-outline-danger text-white me-1 mb-10 w-25 fw-medium" href="#settings-offcanvas" data-bs-toggle="offcanvas" type="button" style="letter-spacing: 2px;">Book now <span class="fas fa-bookmark"></span> </button> 
         </div>
         <div class="homeoverlay"></div>
         
       </section>
-      <section class="pt-10 pb-10" id="servicesSection">
+      <section class="pt-10 pb-10" id="servicessection">
         <div class="bg-holder z-index-2 d-none d-md-block" style="background-image:url(./public/assets/img/bg/13.png);background-size:auto;background-position:right;">
         </div>
         <div class="container-small px-lg-7 px-xxl-3">
           <div class="position-relative z-index-2">
             <div class="row">
               <div class="col-lg-6 text-start text-lg-start pe-xxl-3">
-                <h4 class=" fw-bolder mb-1" style="background-clip: text;
-                      color: transparent;
-                      background-image: linear-gradient(180deg, #c10342 0%, #630014 100%);">Services</h4>
+                <h4 class=" fw-bolder text-danger mb-1">Services</h4>
                 <h2 class="mb-1 text-black lh-base" >Professional Online Coaching And Consultation.<br class="d-md-none" /></h2>
-                <p class="mb-4">Thanks to Rovilyf Coaching, centering at <b>$750/month</b> </p>
-                <a class="btn btn-lg text-white rounded-5 me-2 w-50" href="#settings-offcanvas" data-bs-toggle="offcanvas" style="background: linear-gradient(180deg, #cd006a 0%, #8e002d 100%);: none;">Book a Session Now<i class="fa-solid fa-angle-right ms-2"></i></a>
+                <p class="mb-4">Our mission is to empower you to achieve your fullest potential through personalized one-on-one coaching sessions. Whether it's improving relationships, finding your dream career, boosting self-confidence, or achieving work-life balance, we're here to help. Collaboratively set clear objectives, overcome obstacles, and unlock your inner strengths. Benefit from proven strategies and tailored guidance that have led many to greater happiness, success, and fulfillment. Take the first step – schedule a consultation for a journey of self-discovery and growth.</p>
+                <a class="btn btn-lg btn-danger text-white rounded-5 me-2 w-50" href="#settings-offcanvas" data-bs-toggle="offcanvas">Book a Session Now<i class="fa-solid fa-angle-right ms-2"></i></a>
               </div>
               <div class="col-sm-6 col-lg-3 mt-3 text-start text-lg-start">
                 <div class="h-100 d-flex flex-column justify-content-between">
@@ -193,9 +170,7 @@
                         style="width:50px;height:50px">
                     </lord-icon>
                     <div>
-                      <h5 class="fw-bolder mb-2" style="background-clip: text;
-                      color: transparent;
-                      background-image: linear-gradient(180deg, #c10342 0%, #630014 100%);">One-on-One Sessions </h5>
+                      <h5 class="fw-bolder mb-2 text-danger">One-on-One Sessions </h5>
                       <p class="lh-sm rdmore">Have a sincere, open and progressive consultation and coaching with our very own rovilyn dayton, all on your own for a more immersive and detailed conversation. Coaching and Consultation done with only you and your Coach!</p>
                     </div>
                     </div>
@@ -205,9 +180,7 @@
                 <div class="h-100 d-flex flex-column">
                   <div class="border-center-lg-solid ps-4"><img class="pb-1" src="./public/assets/img/icons/discussion.png" width="45" alt="" />
                     <div class="pt-1">
-                      <h5 class="fw-bolder mb-2" style="background-clip: text;
-                      color: transparent;
-                      background-image: linear-gradient(180deg, #c10342 0%, #630014 100%);">Online Group Sessions</h5>
+                      <h5 class="fw-bolder mb-2 text-danger">Online Group Sessions</h5>
                       <p class=" lh-sm">If you find getting consultations and coachings alone somehow intimidating, Worry no more! We have the perfect system for you. Scheduled everyweek of the Month except on holidays where we gather people alike into 1 amazing online coaching and consultation.</p>
                     </div>
                    </div>
@@ -217,9 +190,10 @@
           </div>
         </div>
       </section>
-      <section class="overflow-auto" id="reviewcontainer">
+      <section class="overflow-auto" id="reviewsection">
         <div class="container-small">
-          <h4 class="m-0 mb-1" style="letter-spacing: .5px;">Client Testimonials with Rovelyf.</h4>
+          <h4 class="m-0 mb-1 text-danger" style="letter-spacing: .5px;">Client Testimonials with Rovelyf.</h4>
+          <p class="mb-0">Lets hear what Rovelyf Satisfied Customers has to say.</p>
           <div class="d-flex align-items-center">
             <div class="gap-2">
               <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
@@ -230,7 +204,7 @@
             </div>
             <p class="ps-2 m-0">5 / 5 Star Review</p>
           </div>
-          <div class="hstack gap-2 mx-auto mt-3 card_container align-items-baseline">
+          <div class="hstack gap-2 mx-auto mt-5 card_container align-items-baseline">
             <div class="card">
               <div class="card-body">
                 <div class="d-flex justify-content-between">
@@ -247,18 +221,21 @@
                 </div>
                 <div class="row">
                   <p class="m-0 mt-4 fw-medium">Remark</p>
-                  <div class="">
-                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
-                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
-                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
-                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
-                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                  <div class="d-flex align-items-center">
+                    <div class="gap-2">
+                      <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                      <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                      <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                      <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                      <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                    </div>
+                    <p class="ps-2 m-0">/ 5 Stars</p>
                   </div>
                 </div>
                 <div class="row">
                   <p class="m-0 mt-2 fw-medium">Comment</p>
                   <div class="description_box">
-                    <p class="m-0 mb-7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, officiis. Ut, impedit cupiditate hic debitis magnam fugiat ipsum, rerum voluptatem autem repellendus dolores blanditiis sapiente enim consectetur voluptates maiores officia.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, officiis. Ut, impedit cupiditate hic debitis magnam fugiat ipsum, rerum voluptatem autem repellendus dolores blanditiis sapiente enim consectetur voluptates maiores officia.</p>
+                    <p class="m-0 mb-7"><strong>Absolutely Outstanding!</strong> Working with Rovelyf has been an incredible journey of self-discovery and growth. The coaching sessions were insightful, empowering, and delivered with genuine care. Rovelyf's expertise and dedication shine through, making the entire experience truly remarkable. If you're ready to unlock your potential and embrace positive change, Rovelyf is the way to go!"</p>
                     <button type="button">Read More</button>
                   </div>
                 </div>
@@ -268,10 +245,10 @@
               <div class="card-body">
                 <div class="d-flex justify-content-between">
                   <div class="d-flex align-items-center">
-                    <img src="./public/assets/img/team/35.webp" class="rounded-5" width="47">
+                    <img src="./public/assets/img/team/9.webp" class="rounded-5" width="47">
                     <div class="ps-3">
-                      <h5 class="m-0">Jason Statelmern</h5>
-                      <p class="mb-0">Financial Analyst</p>
+                      <h5 class="m-0">Jane Merntle</h5>
+                      <p class="mb-0">Art Student</p>
                     </div>
                   </div>
                   <div class="">
@@ -280,18 +257,21 @@
                 </div>
                 <div class="row">
                   <p class="m-0 mt-4 fw-medium">Remark</p>
-                  <div class="">
-                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
-                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
-                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
-                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
-                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                  <div class="d-flex align-items-center">
+                    <div class="gap-2">
+                      <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                      <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                      <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                      <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                      <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                    </div>
+                    <p class="ps-2 m-0">/ 5 Stars</p>
                   </div>
                 </div>
                 <div class="row">
                   <p class="m-0 mt-2 fw-medium">Comment</p>
                   <div class="description_box">
-                    <p class="m-0 mb-7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, officiis. Ut, impedit cupiditate hic debitis magnam fugiat ipsum, rerum voluptatem autem repellendus dolores blanditiis sapiente enim consectetur voluptates maiores officia.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, officiis. Ut, impedit cupiditate hic debitis magnam fugiat ipsum, rerum voluptatem autem repellendus dolores blanditiis sapiente enim consectetur voluptates maiores officia.</p>
+                    <p class="m-0 mb-7"><strong>Exceptional Life Coaching!</strong> Rovelyf's life coaching exceeded all my expectations. The sessions were not only insightful but also tailored to address my specific goals and aspirations. Rovelyf's approach is warm, collaborative, and highly effective. Thanks to their guidance, I've gained clarity, confidence, and a renewed sense of purpose. Five stars and heartfelt gratitude!"</p>
                     <button type="button">Read More</button>
                   </div>
                 </div>
@@ -301,10 +281,10 @@
               <div class="card-body">
                 <div class="d-flex justify-content-between">
                   <div class="d-flex align-items-center">
-                    <img src="./public/assets/img/team/35.webp" class="rounded-5" width="47">
+                    <img src="./public/assets/img/team/11.webp" class="rounded-5" width="47">
                     <div class="ps-3">
-                      <h5 class="m-0">Jason Statelmern</h5>
-                      <p class="mb-0">Financial Analyst</p>
+                      <h5 class="m-0">Brick Hofter</h5>
+                      <p class="mb-0">Labor Manager</p>
                     </div>
                   </div>
                   <div class="">
@@ -313,18 +293,21 @@
                 </div>
                 <div class="row">
                   <p class="m-0 mt-4 fw-medium">Remark</p>
-                  <div class="">
-                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
-                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
-                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
-                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
-                    <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                  <div class="d-flex align-items-center">
+                    <div class="gap-2">
+                      <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                      <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                      <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                      <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                      <span class="fas fa-star fs-sm" style="color: rgb(255, 217, 0);"></span>
+                    </div>
+                    <p class="ps-2 m-0">/ 5 Stars</p>
                   </div>
                 </div>
                 <div class="row">
                   <p class="m-0 mt-2 fw-medium">Comment</p>
                   <div class="description_box">
-                    <p class="m-0 mb-7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, officiis. Ut, impedit cupiditate hic debitis magnam fugiat ipsum, rerum voluptatem autem repellendus dolores blanditiis sapiente enim consectetur voluptates maiores officia.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, officiis. Ut, impedit cupiditate hic debitis magnam fugiat ipsum, rerum voluptatem autem repellendus dolores blanditiis sapiente enim consectetur voluptates maiores officia.</p>
+                    <p class="m-0 mb-7"><strong>Life-changing Experience!</strong> My journey with Rovelyf's life coaching has been nothing short of amazing. The personalized sessions were transformative, helping me navigate challenges and discover my true potential. Rovelyf's expertise, guidance, and support have left a lasting impact on my life. I highly recommend their services to anyone seeking positive change and growth!</p>
                     <button type="button">Read More</button>
                   </div>
                 </div>
@@ -342,23 +325,27 @@
         <div class="container-small px-lg-7 px-xxl-3">
           <div class="row g-5 g-lg-5" id="contact">
             <div class="col-md-6 mb-5 mb-md-0 text-start text-md-start">
-              <h3 class="mb-3" style="color:#820043">Stay connected</h3>
-              <p class="mb-5">To stay connected and contact us for more information, refer down below.</p>
+              <h3 class="mb-2 text-danger">Stay connected</h3>
+              <p class="mb-5">Rovilyn Dayton is available for your necessities at all times.</p>
               <div class="d-flex flex-column align-items-start align-items-md-start gap-4 gap-md-0">
                 <div class="d-md-flex align-items-center">
-                  <div class="icon-wrapper shadow-info"><span class="uil uil-phone text-900  fs-4 z-index-1 ms-2"></span></div>
-                  <div class="flex-1 ms-3"><a class="link-900" href="tel:+832.392.5501">832.392.5501</a></div>
+                  <div class="icon-wrapper">
+                    <span class="uil uil-phone text-900  fs-4 z-index-1 ms-2"></span>
+                  </div>
+                  <div class="flex-1 ms-3">
+                    <a class="link-900" href="tel:+832.392.5501">832.392.5501</a>
+                  </div>
                 </div>
                 <div class="d-md-flex align-items-center">
-                  <div class="icon-wrapper shadow-info"><span class="uil uil-envelope text-900  fs-4 z-index-1 ms-2"></span></div>
-                  <div class="flex-1 ms-3"><a class="fw-semi-bold text-900" href="mailto:rovilynpelayo@gmail.com">rovilynpelayo@gmail.com </a></div>
+                  <div class="icon-wrapper"><span class="uil uil-envelope text-900  fs-4 z-index-1 ms-2"></span></div>
+                  <div class="flex-1 ms-3"><a class="fw-medium text-900" href="mailto:rovilynpelayo@gmail.com">rovilynpelayo@gmail.com </a></div>
                 </div>
                 
               </div>
             </div>
             <div class="col-md-6 text-start text-md-start" id="drop">
-              <h3 class="mb-3" style="color:#820043">Drop us a line</h3>
-              <p class="mb-7">If you have any query or suggestion , we are open to learn from you, Lets talk, reach us anytime.</p>
+              <h3 class="mb-2 text-danger">Drop us a line</h3>
+              <p class="mb-3">If you have any query or suggestion , we are open to learn from you, Lets talk, reach us anytime.</p>
               
               <form class="row g-4" target="_blank" action="https://formsubmit.co/9d0a4972cb0a9e133a84723e2ccb4fa0" method="POST">
                 <div class="col-12">
@@ -371,60 +358,64 @@
                   <textarea class="form-control bg-text-900" rows="6" placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
                 </div>
                 <div class="col-12 d-grid">
-                  <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                  <button type="submit" class="btn btn-lg btn-outline-danger btn-block">Submit Form</button>
                 </div>
               </form>
             </div>
           </div>
         </div>
       </section>
-
-      <div class="position-relative">
-        <div class="bg-holder footer-bg" style="background-image:url(./public/assets/img/bg/bg-rovelyf\ \(2\).png);background-size:cover;">
-        </div>
-        <div class="bg-holder" style="background-image:url(./public/assets/img/bg/bg-right-20.png);background-position:right;background-size:auto;">
+        <!-- <div class="bg-holder footer-bg" style="background-image:url(./public/assets/img/bg/bg-rovelyf\ \(2\).png);background-size:cover;">
+        </div> -->
+        <!-- <div class="bg-holder" style="background-image:url(./public/assets/img/bg/bg-right-20.png);background-position:right;background-size:auto;">
         </div>
         <div class="bg-holder" style="background-image:url(./public/assets/img/bg/bg-left-20.png);background-position:left;background-size:auto;">
-        </div>
-        <div class="position-relative">
+        </div> -->
 
-          <section class="">
+          <section class="bg-1000 mb-0 pb-0">
 
             <div class="container-small px-lg-7 px-xxl-3">
               <div class="row position-relative">
                 <div class="col-12 col-sm-12 col-lg-5 mb-2 order-0 order-sm-0">
-                  <img class="d-dark-none overflow-hidden" src="./public/assets/img/logos/1_1_-removebg-preview (1).png" width="110" alt="" />
-                  <p class="text-dark">Liberated Mind,<br /><span class="fw-bolder" style="color:#990017ce">Best version of yourself.</span></p>
+                  <img class="overflow-hidden" src="./public/assets/img/logos/rove_footerlogo.png" width="110" alt="" />
+                  <p class="text-white">Liberated Mind,
+                    <br />
+                    <span class="fw-bold text-danger">Best version of yourself.</span>
+                  </p>
                 </div>
                 
                   
                 
                 <div class="col-lg-7">
                   <div class="row justify-content-between">
-                    <div class="col-6 col-sm-4 col-lg-3 mb-3 order-2 order-sm-1">
+                    <div class="col-6 col-sm-4 col-lg-3 mb-3 order-2 order-sm-1" style="border-left: 1px solid wheat;">
                       <div class="border-dashed-center-primary-300 ps-3" style="--phoenix-border-opacity: .2;">
-                        <h5 class="fw-bolder mb-2" style="color:#630014">Help</h5>
+                        <h5 class="fw-bolder mb-2 text-danger">Help</h5>
                         <ul class="list-unstyled mb-3">
-                          <li class="mb-1"><a class="text-900 hover-text-100 " href="#team">Home</a></li>
-                          <li class="mb-1"><a class="text-900 hover-text-100 " href="#contact">Services</a></li>
-                          <li class="mb-1"><a class="text-900 hover-text-100 " href="#team">About us</a></li>
-                          <li class="mb-1"><a class="text-900 hover-text-100 " href="#contact">Contact</a></li>
+                          <li class="mb-1"><a class="hover-text-danger text-white" href="#">Home</a></li>
+                          <li class="mb-1"><a class="hover-text-100 text-white" href="#servicessection">Services</a></li>
+                          <li class="mb-1"><a class="hover-text-100 text-white" href="#team">About us</a></li>
+                          <li class="mb-1"><a class="hover-text-100 text-white" href="#contact">Contact</a></li>
                         </ul>
                       </div>
 
                     </div>
-                    <div class="col-6 col-sm-4 col-lg-3 mb-3 order-3 order-sm-2">
+                    <div class="col-6 col-sm-4 col-lg-3 mb-3 order-3 order-sm-2" style="border-left: 1px solid wheat;">
                       <div class="border-dashed-center-primary-300 ps-3" style="--phoenix-border-opacity: .2;">
-                        <h5 class="lh-lg fw-bold mb-2" style="color:#630014">Social Media</h5>
-                        <ul class="list-unstyled mb-md-2">
-                          <li class="mb-1"><a class="text-900 hover-text-100 " href="#!">Facebook</a></li>
-                          <li class="mb-1"><a class="text-900 hover-text-100 " href="#!">LinkedIn</a></li>
+                        <h5 class="lh-lg fw-bold mb-2 text-danger">Social Media</h5>
+                        <ul class="list-unstyled mb-md-2 text-white">
+                          <li class="mb-1"><a class="text-white hover-text-100" href="#!">Facebook</a></li>
+                          <li class="mb-1"><a class="text-white hover-text-100" href="#!">LinkedIn</a></li>
                         </ul>
+                        <div class="d-flex pt-2">
+                          <a href="#!"><span class="fa-brands fa-facebook fs-2 me-3 p-2 fblink"></span></a>
+                          <a href="#!"><span class="fa-brands fa-twitter fs-2 me-3 p-2 twitterlink"></span></a>
+                          <a href="#!"><span class="fa-brands fa-linkedin-in fs-2 p-2 linkedinlink"></span></a>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-6 col-sm-4 col-lg-3 mb-3 order-3 order-sm-2">
-                      <div class="border-dashed-center ps-3" style="--phoenix-border-opacity: .2;">
-                        <div class="d-flex"><a href="#!"><span class="fa-brands fa-facebook fs-2 text-900 me-3"></span></a><a href="#!"><span class="fa-brands fa-twitter fs-2 text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-linkedin-in fs-2 text-primary"></span></a></div>
+                    <div class="col-6 col-sm-4 col-lg-3 mb-3 order-3 order-sm-2" style="border-left: 1px solid wheat;">
+                      <div class="border-dashed-center ps-3" style="--phoenix-border-opacity: .2;" >
                       </div>
                     </div>
                   </div>
@@ -432,9 +423,9 @@
               </div>
             </div>
           </section>
-
-        </div>
-      </div>
+          <div class="bg-900 d-flex justify-content-center py-5">
+            <h6 class="text-white">Copyright © 2024 - <a href="#!"><span class="text-danger">Rovelyf Online Coaching and Consultation.</span></a></h6>
+          </div>
     </main>
     <!-- ! END OF MAIN CONTENT -->
     <div class="offcanvas offcanvas-end settings-panel-0" id="settings-offcanvas" tabindex="-1" aria-labelledby="settings-offcanvas">
@@ -473,10 +464,6 @@
                       </div>
                       <h5 class="text-warning">6 Sessions + 2</h5>
                       <p class="fs--1 text-700">Have a special 1 on 1 online coaching with the very own, Rovilyn Dayton.</p>
-                      <div class="d-flex align-items-end mb-md-5 mb-lg-0">
-                        <h4 class="fw-bolder me-1">$49.99</h4>
-                        <h5 class="fs--1 fw-normal text-700 ms-sm">/ Package</h5>
-                      </div>
                     </div>
                     <img class="d-dark-none" src="./public/assets/img/spot-illustrations/star.png" width="54" height="54" alt="" />
                   </div>
@@ -484,10 +471,11 @@
                     <div class="col-sm-8 col-md-12">
                       <div class="d-sm-flex d-md-block d-lg-flex justify-content-end align-items-end h-100">
                         <ul class="list-unstyled mb-0-start-sm-start-md-0-start-lg ps-sm-5 ps-md-0 ps-lg-5-warning-300">
-                          <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-semi-bold">Technical Supports</span></li>
-                          <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-semi-bold">Up to 20 Members</span></li>
-                          <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-semi-bold">Create & Share libraries</span></li>
-                          <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-semi-bold"><span class="fw-bold">Unlimited</span> Collaboration</span></li>
+                          <li><p>Benefits Apply until your sessions lasts.</p></li>
+                          <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-medium">2 Extra Sessions For Free</span></li>
+                          <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-medium">1-on-1 Coaching with Rovilyn</span></li>
+                          <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-medium">Set your own Schedule</span></li>
+                          <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-medium"><span class="fw-bold">Unlimited</span> After Session Support</span></li>
                         </ul>
                       </div>
                     </div>
@@ -520,10 +508,6 @@
                       </div>
                       <h5 class="text-warning">6 Sessions + 1</h5>
                       <p class="fs--1 text-700">For people who feel more comfortable <br> on session together with other people.</p>
-                      <div class="d-flex align-items-end mb-md-5 mb-lg-0">
-                        <h4 class="fw-bolder me-1">$39.99</h4>
-                        <h5 class="fs--1 fw-normal text-700 ms-sm">/ Package</h5>
-                      </div>
                     </div>
                     <img class="d-dark-none" src="./public/assets/img/spot-illustrations/bag-2.png" width="54" height="54" alt="" />
                   </div>
@@ -531,9 +515,12 @@
                     <div class="col-sm-8 col-md-12">
                       <div class="d-sm-flex d-md-block d-lg-flex justify-content-end align-items-end h-100">
                         <ul class="list-unstyled mb-0-start-sm-start-md-0-start-lg ps-sm-5 ps-md-0 ps-lg-5-200">
-                          <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-semi-bold">Up to 8 Members</span></li>
-                          <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-semi-bold">Create & Share libraries</span></li>
-                          <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-semi-bold">10 Collaboration projects</span></li>
+                          <li><p>Benefits Apply until your sessions lasts.</p></li>
+                          <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-medium">1 Extra Sessions For Free</span></li>
+                          <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-medium">Interactive Group Coaching Online</span></li>
+                          <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-medium">Attend Sessions with available Slot</span></li>
+                          <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-medium">Prebook slots of Group Sessions</span></li>
+                          <li class="d-flex align-items-center"><span class="uil uil-check-circle text-success me-2"></span><span class="text-700 fw-medium"><span class="fw-bold">Unlimited</span> After Session Support</span></li>
                         </ul>
                       </div>
                     </div>
@@ -545,18 +532,18 @@
         </div>
 
         <div class="container-small bg-light-danger p-2 rounded">
-          <div class="d-flex align-items-center">
-            <h5>On the Spot Sessions</h5>
+          <div class="d-flex align-items-center ms-3 mt-1">
+            <h5>Book on the Spot Sessions <span class="fas fa-calendar-check"></span> </h5>
           </div>
           <div class="row px-3">
             <div class="col p-2">
-              <div class="card">
-                
+              <div class="card p-3">
+                <p class="fw-bold">Solo Coaching <span class="fas fa-user-circle"></span></p>
               </div>
             </div>
             <div class="col p-2">
-              <div class="card">
-                
+              <div class="card p-3">
+                <p class="fw-bold">Group Coaching</p>
               </div>
             </div>
           </div>
